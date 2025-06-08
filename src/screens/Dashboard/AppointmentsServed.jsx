@@ -1,23 +1,15 @@
-import React from "react";
+import React from 'react';
 
 export const AppointmentsServed = () => (
-  <div className="absolute w-[300px] h-[200px] top-[132px] left-[961px] bg-white rounded-md">
-    <div className="inline-flex items-center gap-[250px] absolute top-7 left-[29px]">
-      <div className="relative w-fit mt-[-1.00px] font-heading-h3 font-[number:var(--heading-h3-font-weight)] text-[#0f1728] text-[length:var(--heading-h3-font-size)] tracking-[var(--heading-h3-letter-spacing)] leading-[var(--heading-h3-line-height)] whitespace-nowrap [font-style:var(--heading-h3-font-style)]">
-        Appointments Served
-      </div>
+  <div className="position-absolute bg-white rounded" style={{ width: '300px', height: '200px', top: '132px', left: '961px' }}>
+    <div className="d-inline-flex align-items-center gap-10 position-absolute" style={{ top: '28px', left: '29px' }}>
+      <span className="fw-bold" style={{ fontSize: '20px', lineHeight: '30px', fontWeight: '700', color: '#101828', fontFamily: '"Manrope", Helvetica' }}>Appointments Served</span>
     </div>
-    <div className="absolute w-[102px] h-[100px] top-[77px] left-[100px]">
-      <div className="relative w-[110px] h-[110px] top-[-5px] left-[-5px] rounded-[55px]">
-        <div className="absolute top-8 left-9 font-bold text-[#44d264] text-4xl leading-[30px] whitespace-nowrap [font-family:'Manrope',Helvetica] tracking-[0]">
-          10
-        </div>
-        <div className="absolute w-[110px] h-[110px] top-0 left-0 rounded-[55px] border-[10px] border-solid border-[#f4f4f4]" />
-        <img
-          className="absolute w-[60px] h-[60px] top-0 left-[50px]"
-          alt="Ellipse"
-          src="https://c.animaapp.com/mbicircspG0xKp/img/ellipse-17-1.svg"
-        />
+    <div className="position-absolute" style={{ width: '102px', height: '100px', top: '77px', left: '100px' }}>
+      <div className="position-relative" style={{ width: '110px', height: '110px', top: '-5px', left: '-5px', borderRadius: '55px' }}>
+        <div className="position-absolute fw-bold text-success" style={{ top: '32px', left: '36px', fontSize: '32px', lineHeight: '30px' }}>10</div>
+        <div className="position-absolute rounded-circle border border-4 border-light" style={{ width: '110px', height: '110px' }} />
+        <img className="position-absolute" style={{ width: '60px', height: '60px', top: '0', left: '50px' }} alt="Ellipse" src="https://c.animaapp.com/mbicircspG0xKp/img/ellipse-17-1.svg" />
       </div>
     </div>
   </div>

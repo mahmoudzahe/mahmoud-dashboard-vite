@@ -3,49 +3,43 @@ import { DownArrow1 } from "../../icons/DownArrow1";
 import { SevenBell1 } from "../../icons/SevenBell1";
 
 export const Header = () => (
-  <div className="absolute w-[1451px] h-[100px] top-0 left-0">
+  <div className="position-absolute bg-white border-bottom border-light" style={{ width: '100%', height: '80px', top: '0', left: '0', padding: '0 20px' }}>
+    <div className="d-flex align-items-center justify-content-between h-100 position-relative">
+      <div className="d-flex align-items-center">
+        <div className="position-relative" style={{ width: '70px', height: '70px', marginRight: '20px' }}>
+          <img
+            className="position-absolute"
+            style={{ width: '70px', height: '70px', left: '0' }}
+            alt="Logo"
+            src="./src/assets/Logo.png"
+          />
+        </div>
+        <div className="d-flex align-items-center gap-4 position-relative" style={{ height: '80px' }}>
+          <span style={{ fontFamily: 'Roboto, Helvetica', fontSize: '24px', fontWeight: 400, lineHeight: '32px', color: '#1E5DBC', whiteSpace: 'nowrap' }}>Home</span>
+          <span style={{ fontFamily: 'Roboto, Helvetica', fontSize: '24px', fontWeight: 400, lineHeight: '32px', color: '#0F2F64', whiteSpace: 'nowrap' }}>About Us</span>
+          <span style={{ fontFamily: 'Roboto, Helvetica', fontSize: '24px', fontWeight: 400, lineHeight: '32px', color: '#0F2F64', whiteSpace: 'nowrap' }}>Location</span>
+          <span style={{ fontFamily: 'Roboto, Helvetica', fontSize: '24px', fontWeight: 400, lineHeight: '32px', color: '#0F2F64', whiteSpace: 'nowrap' }}>Health News</span>
+          <span style={{ fontFamily: 'Roboto, Helvetica', fontSize: '24px', fontWeight: 400, lineHeight: '32px', color: '#0F2F64', whiteSpace: 'nowrap' }}>Careers</span>
+          <div className="position-absolute bg-light rounded-circle" style={{ width: '40px', height: '40px', padding: '6px', left: '1050px', top: '50%', transform: 'translateY(-50%)' }}>
+  <SevenBell1 className="position-absolute" style={{ width: '24px', height: '24px', top: '50%', left: '50%', transform: 'translate(-50%, -50%)' }} />
+</div>
+        </div>
+      </div>
+      <div className="d-flex align-items-center gap-3">
+        <div className="d-flex align-items-center gap-2">
+          <div className="position-relative rounded-circle" style={{ width: '48px', height: '48px', background: 'url(./src/assets/Kathryn.png) 50% 50% / cover' }} />
+          <div className="position-relative" style={{ marginTop: '-1px' }}>
+            <span style={{ fontFamily: 'Manrope, Helvetica', fontSize: '18px', fontWeight: 700, lineHeight: '30px', color: '#0f1728', whiteSpace: 'nowrap' }}>Kathryn</span>
+          </div>
+          <DownArrow1 className="position-relative" style={{ width: '24px', height: '24px' }} />
+        </div>
+      </div>
+    </div>
     <img
-      className="absolute w-[1140px] h-px top-[100px] left-[300px] object-cover"
+      className="position-absolute object-cover"
+      style={{ width: '1140px', height: '1px', top: '80px', left: '150px' }}
       alt="Rectangle"
       src="https://c.animaapp.com/mbicircspG0xKp/img/rectangle-220.svg"
     />
-    <div className="absolute w-[1451px] h-[100px] top-0 left-0 bg-white border border-solid border-[#eaecf0]" />
-    <div className="inline-flex items-start gap-[43px] absolute top-10 left-[239px]">
-      <div className="relative w-[119px] h-[26px] mt-[-1.00px] font-m3-headline-small font-[number:var(--m3-headline-small-font-weight)] text-[#0f2f64] text-[length:var(--m3-headline-small-font-size)] tracking-[var(--m3-headline-small-letter-spacing)] leading-[var(--m3-headline-small-line-height)] whitespace-nowrap [font-style:var(--m3-headline-small-font-style)]">
-        About Us
-      </div>
-      <div className="relative w-fit mt-[-1.00px] font-m3-headline-small font-[number:var(--m3-headline-small-font-weight)] text-text-darker text-[length:var(--m3-headline-small-font-size)] tracking-[var(--m3-headline-small-letter-spacing)] leading-[var(--m3-headline-small-line-height)] whitespace-nowrap [font-style:var(--m3-headline-small-font-style)]">
-        Location
-      </div>
-      <div className="relative w-fit mt-[-1.00px] font-m3-headline-small font-[number:var(--m3-headline-small-font-weight)] text-text-darker text-[length:var(--m3-headline-small-font-size)] tracking-[var(--m3-headline-small-letter-spacing)] leading-[var(--m3-headline-small-line-height)] whitespace-nowrap [font-style:var(--m3-headline-small-font-style)]">
-        Health News
-      </div>
-      <div className="relative w-fit mt-[-1.00px] font-m3-headline-small font-[number:var(--m3-headline-small-font-weight)] text-text-darker text-[length:var(--m3-headline-small-font-size)] tracking-[var(--m3-headline-small-letter-spacing)] leading-[var(--m3-headline-small-line-height)] whitespace-nowrap [font-style:var(--m3-headline-small-font-style)]">
-        Careers
-      </div>
-    </div>
-    <div className="absolute w-[102px] h-[34px] top-[31px] left-[131px] [font-family:'Roboto',Helvetica] font-normal text-brand-primary text-[28px] tracking-[0] leading-9 whitespace-nowrap">
-      Home
-    </div>
-    <div className="absolute w-[78px] h-[74px] top-[13px] left-[13px]">
-      <div className="relative w-[73px] h-[74px]">
-        
-        <img
-          className="absolute w-[70px] h-[70px]  left-[5px]"
-          alt="Ellipse"
-          src="./src/assets/Logo.png"
-        />
-      </div>
-    </div>
-    <div className="absolute w-[61px] h-15 top-[26px] left-[1120.79px] bg-[#8a7f75] rounded-[30.55px/24px]">
-      <SevenBell1 className="!absolute !w-[31px] !h-6 !top-3 !left-[15px]" />
-    </div>
-    <div className="flex w-[221px] items-center justify-center gap-3 absolute top-[26px] left-[1189px]">
-      <div className="relative w-12 h-12 rounded-[200px] [background:url(./src/assets/Kathryn.png)_50%_50%_/_cover]" />
-      <div className="text-[#0f1728] text-[length:var(--heading-h3-font-size)] leading-[var(--heading-h3-line-height)] relative w-fit font-heading-h3 font-[number:var(--heading-h3-font-weight)] tracking-[var(--heading-h3-letter-spacing)] whitespace-nowrap [font-style:var(--heading-h3-font-style)]">
-        Kathryn
-      </div>
-      <DownArrow1 className="!relative !w-6 !h-6" />
-    </div>
   </div>
 );

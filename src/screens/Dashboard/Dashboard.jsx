@@ -11,8 +11,8 @@ import { ImagesSection } from "./ImagesSection";
 
 export const Dashboard = () => {
   return (
-    <div className="bg-[#fafafb] flex flex-row justify-center w-full">
-      <div className="bg-[#fafafb] overflow-hidden w-[1440px] h-[1024px] relative">
+    <div className="bg-light d-flex flex-row justify-content-center w-100" style={{ minHeight: '1024px' }}>
+      <div className="bg-light overflow-hidden" style={{ width: '1440px', position: 'relative' }}>
         <Header />
         <Transactions />
         <EmployeeSchedule />
@@ -26,4 +26,3 @@ export const Dashboard = () => {
     </div>
   );
 };
-
